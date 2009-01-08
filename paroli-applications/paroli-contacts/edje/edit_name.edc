@@ -231,6 +231,13 @@ group { name: "edit-name";
                 source: "next-button";
                 action: SIGNAL_EMIT "next_step" "next-button";
           }
+        program 
+        { 
+            name: "back-button-clicked";
+            signal: "mouse,up,1";
+            source: "back-button";
+            action: SIGNAL_EMIT "back" "back-button";
+        }
       program { 
                 name: "close_window";
                 signal: "mouse,up,1";
